@@ -1,0 +1,88 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 34px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid $color-background;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 0;
+
+  &__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: $color-tertiary-dark;
+    top: .1px;
+    transition: all 0.5s;
+    margin-top: 1px;
+    margin-left: 10px;
+    padding-top: 3px !important;
+    padding-left: 20px !important;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  .checkbox:checked + &::after {
+    left: 49px;
+  }
+
+  .checkbox:checked + & {
+    background-color: white;
+  }
+
+  .checkbox {
+    display: none;
+  }
+}
+
+.unchecked:before {
+  content: '';
+  position: absolute;
+  width: 65px;
+  height: 30px;
+  border-radius: 30px;
+  color: white;
+  background-color: $color-tertiary-dark;
+  top: .1px;
+  transition: all 0.5s;
+  margin-top: 1px;
+  margin-left: 10px;
+  padding-top: 3px !important;
+  padding-left: 20px !important;
+}
+
+.checkbox:not(:checked) + .toggle::before {
+  right: 59px;
+}
+
+.checkbox:not(:checked) + .toggle {
+  background-color: white;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checked:before {
+  background-color: white;
+  color: black;
+  font-weight: 800;
+}

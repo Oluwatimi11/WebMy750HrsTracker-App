@@ -1,0 +1,71 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.footer {
+    background-color: $color-text-dark;
+    width: 100%;
+    padding: 3rem 5rem;
+    @include flexRow(column);
+    color: $color-white;
+}
+
+.footer__top {
+    @include flex(row, space-between);
+    padding-bottom: 2rem;
+}
+
+.footer__top--head {
+    width: 50%;
+}
+
+.footer__top--header {
+    @include Inter-600;
+    font-size: 20px;
+}
+
+.footer__top--para {
+    @include Inter-500;
+    font-size: 16px;
+}
+
+.footer__top--field {
+    @include flexRow(row);
+    width: 40%;
+}
+
+.footer__top--input {
+    width: 280px;
+    height: 44px;
+    border-radius: 50px;
+    color: $color-background;
+    margin-right: 1rem;
+    font-size: 16px;
+}
+
+.footer__top--btn {
+    width: 147px !important;
+    border-radius: 50px !important;
+    border: none !important;
+}
+
+.footer__btm {
+    @include flexRow(row);
+    padding-top: 2rem;
+    align-items: left;
+}
+
+.footer__btm--div {
+    width: 15%;
+}
+
+.footer__btm--head {
+    @include Inter-800;
+    font-size: 14px;
+}
+
+.footer__btm--ul {}
+
+.footer__btm--li {
+    @include Inter-400;
+    font-size: 16px;
+}

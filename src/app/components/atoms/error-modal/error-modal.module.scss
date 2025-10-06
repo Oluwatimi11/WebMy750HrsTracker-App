@@ -1,0 +1,54 @@
+.error__main__div {
+    display: flex;
+    // background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 45%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+}
+
+.error__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 10%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    height: 4rem;
+    width: 40%;
+    border: 1px solid #ED017F;
+    text-align: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 20rem;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.error__text__div {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+}
+
+.error__text {
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    color: #FF0000;
+}
+
+.cancel__icon {
+    background-color: #FF0000;
+    height: 25px;
+    width: 25px;
+    color: #ffffff;
+    border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.team__div {
+    padding: 4rem 3rem;
+    @include flexRow(column);
+    background-color: $color-background-1;
+    height: 100%;
+}
+
+.team__table {
+    $iconwidth: 50%;
+}

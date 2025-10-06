@@ -1,0 +1,43 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+
+.member {
+    width: 100%;
+    @include flexRow(row);
+    padding: 1.5rem 5rem;
+}
+
+.member__limb {
+    width: 20%;
+}
+
+.member__logo {
+    width: 95.67px !important;
+    height: 64.59px !important;
+}
+
+
+.member__body {
+    width: 80%;
+    align-items: center;
+}
+
+.member__comp {
+    width: 631px;
+    height: 72px;
+    background-color: #FAFAFA;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.member__comp--ul {
+    width: 631px;
+    height: 72px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    @include flex(row, space-evenly);
+}
+
+.member__comp--li {}

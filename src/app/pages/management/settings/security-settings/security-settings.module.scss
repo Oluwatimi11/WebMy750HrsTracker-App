@@ -1,0 +1,39 @@
+@import "../../../../styles/abstracts/mixins";
+@import "../../../../styles/abstracts/variables";
+
+.container {
+    background-color: $color-background-1;
+    padding-bottom: 30%;
+}
+
+.form__head {
+    margin-bottom: 20px;
+
+    &--title {
+        color: $color-tertiary-dark;
+    }
+}
+
+.form__div {
+    padding-top: 2rem;
+    margin-left: 12%;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+.form__div--comp {}
+
+.form__div--input {
+    background-color: $color-white !important;
+    border: none;
+}
+
+.form__input--label {
+    font-size: 25px;
+}
+
+.form__div--btn {
+    margin-top: 2rem;
+    padding-left: 25%;
+}

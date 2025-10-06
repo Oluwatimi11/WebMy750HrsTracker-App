@@ -1,0 +1,116 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.main__div {
+    padding: 4rem 3rem;
+    @include flexRow(column);
+    background-color: $color-background-1;
+}
+
+.main__dashboard {
+    height: 260px;
+    width: 100%;
+    border: 1px solid $color-background;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 15px 15px 15px 25px;
+
+    &--top {
+        @include flex(row, space-between);
+    }
+
+    &--header {
+        @include flexRow(row);
+    }
+
+    &--bottom {
+        @include flexRow(row);
+        margin-top: 10px;
+    }
+
+
+}
+
+.main__date--div {
+    text-align: right;
+}
+
+.main__date--dropdown {
+    height: 3px !important;
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    /* other styles for aesthetics */
+    width: 50%;
+    font-size: 14px;
+    padding: 0.675em 5em 0.675em .5em;
+    background-color: #fff;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    color: $color-text-dark;
+    cursor: pointer;
+}
+
+
+.main__dashboard--data {
+    width: 30%;
+    height: 178px;
+    border-radius: 8px;
+    padding: 15px 10px;
+    margin-right: 5px;
+    z-index: 1;
+
+    &-top{
+        @include flexRow(row);
+
+        h2 {
+            @include Inter-500();
+            font-size: 16px;
+        }
+    }
+
+    &-mid{
+        padding-top: 5px;
+        text-transform: capitalize;
+        h2 {
+            @include Inter-500();
+            font-size: 24px;
+        }
+    }
+
+    &-bottom{
+        
+    }
+
+    &-indicator {
+        width: 5px;
+        height: 24px;
+        border-radius: 100px;
+        margin-right: 5px;
+        background-color: red;
+    }
+}
+
+.main__dashboard--donut {
+    height: 178px !important;
+    width: 279px;
+}
+
+.main__dashboard--data-top {}
+
+.main__dashboard--data-mid {}
+
+.main__dashboard--data-bottom {}
+ 
+
+#data-one {
+    background-color: $color-primary-light;
+}
+
+#data-two {
+    background-color: $color-gold-dark;
+}
+
+#data-three {
+    background-color: $color-secondary-dark-2;
+}

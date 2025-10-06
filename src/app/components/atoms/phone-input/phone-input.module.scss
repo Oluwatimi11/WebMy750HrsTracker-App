@@ -1,0 +1,22 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.intl-tel-input {
+    width: 100%;
+    @include flexRow(column);
+    margin-bottom: 1rem;
+}
+
+.phone__btm--label {}
+
+.phone__btm--input {
+    @include inputBorder(8px);
+}
+
+.intl-tel-input input[type=tel] {
+    width: 100% !important;
+    border-radius: 8px !important;
+    border: 1px solid #D0D5DD !important;
+    padding: 10px;
+    box-sizing: border-box;
+}

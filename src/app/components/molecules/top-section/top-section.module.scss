@@ -1,0 +1,38 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.top__section {
+    padding: 35px 20px 35px 50px;
+    @include flexRow(row);
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background-1;
+}
+
+.top__section--left {
+    width: 20%;
+    @include Inter-500();
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+.top__section--mid {
+    width: 65%;
+    padding-left: 5rem;
+    padding-right: 4rem;
+
+    @include flex(row, space-between);
+}
+
+.top__section--right {
+    width: 15%;
+}

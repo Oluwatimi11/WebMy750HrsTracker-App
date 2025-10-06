@@ -1,0 +1,25 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.filter__dropdown--form {
+    width: 100%;
+}
+
+.filter__btm--checkbox {
+    margin-bottom: 1rem;
+}
+
+.filter__btm--check-inp {
+    @include inputBorder(12px);
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.filter__btm--check-lab {
+    color: #667085;
+
+    a {
+        text-decoration: underline;
+    }
+}

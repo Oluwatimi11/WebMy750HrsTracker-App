@@ -1,0 +1,47 @@
+.chartCard {
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 259px;
+  max-height: 178px;
+  background-color: #E7F6EC;
+
+  &:first-child {
+    background-color: #FEF6E7;
+
+    .indicator {
+      border: 2px solid #F19A02;
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: #FFECE5;
+
+    .indicator {
+      border: 2px solid #F56630;
+    }
+  }
+
+  &:last-child {
+    background-color: #F9FAFB;
+
+    .indicator {
+      border: 2px solid #3247FC;
+    }
+  }
+
+  .chartTop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .indicator {
+    border: 2px solid #4CAF50;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+  }
+
+
+}

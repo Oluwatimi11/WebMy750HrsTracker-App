@@ -1,0 +1,107 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.sidenav__logo {
+    width: 100% !important;
+}
+
+.members__main {
+    @include flexRow(column);
+    padding: 3rem 5rem;
+}
+
+.members__main--div {
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.members__main--head {
+    @include Inter-500();
+    font-size: 32px;
+    width: 40%; 
+    margin-bottom: 1rem;   
+}
+
+.members__main--para {
+    @include Inter-400();
+    font-size: 20px;
+    color: $color-text-dark;
+}
+
+
+.members__div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    // padding: 40px 45px;
+}
+
+.members__card {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.members__card--head {
+    @include flexRow(row);
+    margin-bottom: .5rem;
+}
+
+.members__card--indicator {
+    width: 5px;
+    height: 24px;
+    border-radius: 100px;
+    margin-right: 15px;
+    background-color: #EB5017;
+}
+
+.members__card--head-3 {
+    @include Inter-600();
+    font-size: 22px;
+}
+
+.members__card--body {
+}
+
+.members__card--para {
+    @include Inter-400();
+    font-size: 20px;
+    color: $color-text-dark;
+    line-height: 32px;
+}
+
+
+.members__sub {
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.members__sub--head {
+    @include Inter-600();
+    font-size: 24px;
+    width: 35%; 
+    margin-bottom: 1rem;  
+}
+
+.members__sub--para {
+    @include Inter-400();
+    font-size: 20px;
+    color: $color-text-dark;
+}
+
+.members__ul {}
+
+.members__li {
+    @include Inter-400();
+    font-size: 20px;
+    color: $color-text-dark;
+}
+
+.members__sub--link {
+    color: $color-tertiary-dark;
+}
+
+
+.members__para {
+    @include Inter-400();
+    font-size: 20px;
+    color: $color-text-dark;
+}

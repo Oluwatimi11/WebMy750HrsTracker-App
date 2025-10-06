@@ -1,0 +1,50 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.action {
+    width: 100%;
+    background-color: #F2F3FC;
+    height: 341px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 20% 3rem 20%;
+}
+
+.action__top {
+    width: 100%;
+}
+
+.action__top--head {
+    @include Inter-600;
+    font-size: 36px;
+}
+
+.action__top--para {
+    @include Inter-500;
+    font-size: 24px;
+}
+
+.action__btm {
+    padding-top: 2rem;
+    padding-left: 20%;
+    width: 100%;
+}
+
+.double__btn--div {
+    @include flexRow(row);
+}
+
+.double__btn--first {
+    background-color: $color-white !important;
+    border: 1px solid $color-tertiary-dark !important;
+    color: $color-black !important;
+    margin-right: 1rem !important;
+}
+
+.double__btn--second {
+    background-color: $color-tertiary-dark !important;
+    border: 1px solid $color-tertiary-dark !important;
+    color: $color-white !important;
+}
+

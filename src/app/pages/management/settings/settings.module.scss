@@ -1,0 +1,17 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.settings {
+    @include flexRow(column);
+    width: 100%;
+    background-color: $color-background-1;
+
+
+    .settings__top {
+        
+    }
+
+    .settings__bottom {
+        width: 100%;
+    }
+}

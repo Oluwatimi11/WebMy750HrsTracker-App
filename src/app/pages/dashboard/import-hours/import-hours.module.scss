@@ -1,0 +1,17 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+
+.import__main--div {
+    background-color: $color-background-1;
+    height: 100%;
+}
+
+.import__div {
+    padding: 2rem 1.5rem;
+
+}
+
+.import__upload--div {
+    @include flexRow(column);
+}

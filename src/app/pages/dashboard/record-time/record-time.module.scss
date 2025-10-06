@@ -1,0 +1,78 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+
+.entry__main--div {
+    background-color: $color-background-1;
+    color: $color-background-dark;
+}
+
+.entry__div {
+    padding: 2rem 3rem;
+    @include flexRow(column);
+}
+
+.entry__form {
+    @include flexRow(column);
+}
+
+.entry__field--form {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 18px !important;
+
+    &-input {
+        font-size: 18px !important;
+        width: 90% !important;
+        height: 58px !important;
+        padding: 15px 20px;
+        border: 1px solid $color-background-4 !important;
+        border-radius: 10px;
+        margin: 15px 0px !important;
+        font-family: Inter;
+        background-color: #fff !important;
+    }
+
+}
+
+.entry__dropdown--div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.entry__textarea--div {
+    @include flexRow(column);
+    align-items: baseline;
+    position: relative;
+    margin-bottom: 1rem;
+    @include Inter-400();
+    font-size: 16px;
+}
+
+.entry__textarea--textlabel {}
+
+.entry__textarea--area {
+    width: 70%;
+    padding: 15px 20px;
+    border: 1px solid $color-background-4;
+    border-radius: 12px;
+    margin: 15px 0px;
+
+    &:hover {
+        border: 2px solid $color-tertiary-light;
+    }
+}
+
+.entry__upload--area {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    width: 100%;
+    height: 207px;
+    max-width: 70%;
+    border-radius: 12px;
+    background-color: $color-white;
+}

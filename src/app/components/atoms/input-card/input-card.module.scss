@@ -1,0 +1,18 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.input__card {
+    @include flexRow(row);
+    width: 326px;
+    height: 46px;
+    border-radius: 12px;
+    background-color: $color-white;
+    border: 1px solid $color-tertiary-dark-1;
+    font-size: 18px;
+    align-items: center;
+    padding-left: 10px;
+
+    i {
+        position: absolute;
+    }
+}

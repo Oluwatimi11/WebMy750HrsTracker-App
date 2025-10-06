@@ -1,0 +1,13 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.container--One {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container--div__labelTwo {
+
+    color: $color-tertiary-dark;
+    text-decoration: underline;
+}

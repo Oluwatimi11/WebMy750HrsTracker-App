@@ -1,0 +1,59 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.timer-toggle {
+    @include flexRow(row);
+    align-items: center;
+}
+
+/* toggle in label designing */
+.timer-toggle-label {
+    position : relative ;
+    display : inline-block;
+    width : 42px;
+    height : 24px;
+    background-color: rgb(44, 112, 222);
+    border-radius: 30px;
+    border: 1px solid rgb(44, 112, 222);
+    text-align: left;
+    margin-right: 10px;
+}
+       
+/* After slide changes */
+.timer-toggle-label:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: $color-white;
+    border: 1px solid rgb(44, 112, 222);
+    top: .1px; 
+    right: 1px;
+    transition:  all 0.5s;
+    margin-top: 1px;
+    padding-top: 3px !important;
+    padding-left: 20px !important;
+}
+       
+/* Toggle text */
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+       
+/* Checkbox checked effect */
+.timer-checkbox:checked + .timer-toggle-label::after {
+    right : 15px; 
+    background-color: rgb(44, 112, 222);
+}
+       
+/* Checkbox checked toggle label bg color */
+.timer-checkbox:checked + .timer-toggle-label {
+    background-color: $color-white;
+}
+       
+/* Checkbox vanished */
+.timer-checkbox { 
+    display : none;
+}

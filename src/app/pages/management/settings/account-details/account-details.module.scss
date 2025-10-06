@@ -1,0 +1,181 @@
+@import "../../../../styles/abstracts/mixins";
+@import "../../../../styles/abstracts/variables";
+
+
+.container {
+    background-color: $color-background-1;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.details__div {
+    width: 80%;
+    padding-top: 1rem;
+    margin-left: 2.5rem;
+    text-align: left;
+}
+
+.details__top--3 {
+    @include Inter-500();
+    font-size: 20px;
+}
+
+.details__btm--top {
+    margin-left: 40%;
+    margin-right: 20%;
+    @include flex(row, space-evenly);
+}
+
+.details__btm--names {
+    @include flexRow(column);
+    margin-right: 5px;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+.details__name--input {
+    @include inputBorder(8px);
+    width: 100%;
+}
+
+
+.details__btm--inner {
+    width: 100%;
+    @include flex(row, space-between);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #EAECF0;
+    padding-bottom: 1rem;
+    padding-right: 20%;
+}
+
+.details__upload--div {
+    width: 80%;
+    margin-left: 2.5rem;
+    text-align: left;
+    border-top: 2px solid #EAECF0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color-background-1;
+}
+
+.details__btm--upload {
+    width: 100%;
+    @include flex(row, space-between);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #EAECF0;
+    padding-bottom: 1rem;
+}
+
+.details__upload--head {
+    width: 30%;
+
+    h4 {
+        color: #344054;
+        font-size: 14px;
+    }
+
+    p {
+        @include Inter-400();
+        font-size: 14px;
+        color: #667085;
+    }
+}
+
+.details__upload--body {
+    @include flexRow(row);
+    width: 65%;
+    padding-left: 3rem;
+}
+
+.details__upload--image {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.details__upload--img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+}
+
+.details__btm--input {
+    @include inputBorder(8px);
+    width: 50%;
+}
+
+.details__btm--label {
+    color: #344054;
+    font-size: 14px;
+}
+
+.details__btm--area {
+    @include inputBorder(8px);
+}
+
+.details__btm--check-inp {
+    @include inputBorder(6px);
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.details__btm--check-lab {
+    color: #667085;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.details__btn--inner {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 45%;
+}
+
+.support__div {}
+
+#details__upload--file {
+    width: 100%;
+    height: 150px !important;
+    align-items: center;
+    font-size: 14px;
+
+    h3 {
+        font-size: 14px;
+    }
+  
+    span {
+        font-size: 14px;
+    }
+
+    i {
+        color: #003889;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 20px;
+        margin-bottom: 1rem;
+        transition: all .2s ease-in-out;
+    }
+
+    //tab-port
+    @media only screen and (max-width: 900px) {
+      font-family: Inter;
+      width: 90%;
+      height: 48px;
+    }
+  
+    //phone
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+    }
+}
+
+#details__upload--icn {
+    width: 40px;
+    height: 40px;
+}

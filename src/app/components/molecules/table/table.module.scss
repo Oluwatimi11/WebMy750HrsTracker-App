@@ -1,0 +1,153 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+$iconwidth : 100%;
+
+.table__div-1 {
+  width: 100%;
+  background-color: $color-white;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px $color-background-4;
+  border-collapse: collapse;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.table__div {
+  width: 100%;
+  background-color: $color-white;
+  border: 1px solid $color-background-4;
+  border-collapse: collapse;
+  border-radius: 12px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px $color-background-4;
+}
+
+.table__main--div {
+  border: 1px solid $color-background-4;
+  border-radius: 12px;
+}
+
+.table__header {
+  font-weight: 400;
+  height: 55px;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.table__head {
+  background-color: $color-background-1;
+  height: 55px;
+  text-align: left;
+  border-collapse: separate;
+  border-radius: 12px;
+}
+
+.table__head--row {
+  height: 55px;
+}
+
+.table__head--span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.table__row {
+  height: 50px;
+  padding-top: 8px;
+  border-bottom: 1px solid $color-background-4;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.table__body {}
+
+
+
+.table__td {
+  padding-right: 5%;
+
+  div {
+
+  span {
+    width: 80%;
+  }
+  }
+
+  &:first-child {
+    padding-left: 20px;
+  }
+}
+
+.table__row--div {
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.table__row--border {
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+.table_td:nth-last-child(n+2) {
+  div {
+    border-bottom: 1px solid $color-background-4;
+  }
+}
+
+.table__th:first-child {
+  padding-left: 20px;
+}
+
+.table__icon--div {
+  @include flexRow(row);
+  padding-top: 15px;
+  padding-right: 10%;
+  // width: $iconwidth;
+  justify-content: flex-start;
+  // width: 50%;
+}
+
+.table__icon--icn{
+  border: 1px solid $color-background;
+  border-radius:5px;
+  height: 25px;
+  width: 25px;
+  padding-top: 3px;
+  padding-left: 3px;
+  margin-right: 10px;
+}
+
+.table__option--icn{
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.table__no--delete {
+  display: none !important;
+}
+
+.table__td--real {
+  background-color: $color-tertiary-light-3;
+  color: $color-tertiary;
+  border-radius: 10px;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 9px;
+}
+
+.table__td--personal {
+  background-color: $color-secondary-light;
+  color: $color-secondary-dark;
+  border-radius: 10px;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 9px;
+}

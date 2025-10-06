@@ -1,0 +1,75 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+
+.container {
+    align-items: center;
+    text-align: center;
+    background-color: $color-background-1;
+}
+
+.support__div {
+    width: 40%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    padding-top: 2rem;
+    // padding-bottom: 4rem;
+}
+
+.support__top {
+    margin-bottom: 1rem;
+}
+
+.support__top--3 {
+    @include Inter-500();
+    font-size: 20px;
+}
+
+.support__btm {}
+
+.support__btm--top {
+    @include flex(row, space-between);
+}
+
+.support__btm--names {
+ @include flexRow(column);
+ margin-right: 10px;
+ margin-bottom: 1rem;
+ width: 100%;
+}
+
+
+.support__btm--inner {
+    width: 100%;
+    @include flexRow(column);
+    margin-bottom: 1rem;
+}
+
+.support__btm--label {}
+
+.support__btm--input {
+    @include inputBorder(8px);
+}
+
+.support__btm--area {
+    @include inputBorder(8px);
+}
+
+.support__btm--check-inp {
+    @include inputBorder(6px);
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.support__btm--check-lab {
+    color: #667085;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.support__div {}

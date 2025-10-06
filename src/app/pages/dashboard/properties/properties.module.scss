@@ -1,0 +1,15 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+
+.property__container {
+    height: 100%;
+    background-color: $color-background-1;
+}
+
+.property__div {
+    height: 100%;
+    padding: 4rem 3rem;
+    @include flexRow(column);
+    background-color: $color-background-1;
+}

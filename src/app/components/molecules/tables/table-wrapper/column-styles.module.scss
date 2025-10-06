@@ -1,0 +1,61 @@
+.table {
+  color: black;
+
+  &_title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &_content {
+    font-size: 16px;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &Action {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &_commission {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    // @include media("<=tablet") {
+    //   font-size: 14px;
+    //   max-width: fit-content;
+    //   margin-left: auto;
+    // }
+
+    &_active {
+      color: color(GreenVarThree);
+    }
+    &_paused {
+      color: color(OrangeVarOne);
+    }
+    &_notActive {
+      color: color(RedVarOne);
+    }
+
+    svg {
+      width: 12px;
+    }
+
+    &_pausedIcon {
+      circle {
+        fill: color(OrangeVarThree);
+      }
+    }
+    &_inactiveIcon {
+      circle {
+        fill: color(RedVarThree);
+      }
+    }
+  }
+}

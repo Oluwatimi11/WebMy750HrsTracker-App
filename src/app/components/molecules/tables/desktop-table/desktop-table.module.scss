@@ -1,0 +1,26 @@
+@import "../../../../styles/abstracts/mixins";
+@import "../../../../styles/abstracts/variables";
+
+.table {
+  border: 1px solid $color-background-4;
+
+  thead>tr>th {
+    background-color: $color-background-1 !important;
+
+    &::before {
+      all: unset !important;
+    }
+  }
+  
+  thead>tr>th, &_Row>td {
+    font-size: 16px;
+    height: 55px;
+  }
+
+  thead > tr > th,
+  &_Row > td {
+    padding: 0 5% 0 20px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

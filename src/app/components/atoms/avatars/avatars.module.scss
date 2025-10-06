@@ -1,0 +1,19 @@
+.avatarCard {
+
+    .indicator {
+        border: 2px solid #3247FC;
+        margin-right: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icon {
+        color: #3247FC;
+        margin-right: 10px;
+    }
+}
